@@ -36,6 +36,7 @@ public class testLogin {
     @Test(dataProvider = "testlogin")
     public void testcloud1(String user,String password) throws InterruptedException {
         Login.login(driver,user,password);
+        System.out.println("ss");
         String title = driver.getTitle();
         log.info("获取到title:{}",title);
         MyAssert.assertEquals(title,"Supernote Cloud");
