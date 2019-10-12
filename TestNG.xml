@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" parallel="methods" thread-count="1" preserve-order="true">
+
+<!--      <test name="rattatest">-->
+<!--        <classes>-->
+<!--            <class name="testLogin"/>-->
+<!--        </classes>-->
+<!--      </test>-->
+        <test name="rattatest1">
+            <classes>
+                <class name="testUpload">
+                </class>
+            </classes>
+        </test>
+
+  <listeners>
+          <listener class-name="driver.testng.RetryListener"/>
+          <listener class-name="driver.testng.TestResultListener"/>
+  </listeners>
+</suite> <!-- Default Suite -->
