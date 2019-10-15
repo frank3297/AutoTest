@@ -41,7 +41,7 @@ public class testUpload {
     @AfterMethod
     public void closebrowser(){
 
-        System.out.println("hello12");
+        System.out.println("hello123");
         BrowserDriver.closebrowser();
     }
 
